@@ -1,31 +1,43 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-blue-500 to-purple-600 flex items-center justify-center">
-    <div class="text-center">
-      <h1 class="text-6xl font-bold text-white">
-        Hi, I'm <span class="text-yellow-300">Samudith</span>
-      </h1>
-      <p class="text-xl text-white mt-4">A Frontend Developer</p>
-      <div class="mt-6">
-        <button class="bg-white text-blue-600 py-2 px-6 rounded-lg mr-4 hover:bg-gray-200 transition">
-          Projects
-        </button>
-        <button class="bg-yellow-300 text-blue-600 py-2 px-6 rounded-lg hover:bg-yellow-400 transition">
-          Contact
-        </button>
+  <div class="min-h-screen bg-black text-white">
+    <!-- Header -->
+    <header class="absolute top-5 left-5 text-sm tracking-wide">
+      <p>SAMUDITH</p>
+      <p>THARINDAKA</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-col items-center justify-center space-y-20">
+      <!-- Image Section -->
+      <img 
+        src="../assets/images/samudith1.jpg" 
+        alt="Photo"
+        class="w-72 h-96 object-cover"
+      />
+
+      <!-- Title -->
+      <div class="text-center" v-motion-roll-visible-bottom
+        
+      >
+        <h1 class="text-9xl font-bold tracking-wide">PHOTO</h1>
+        <h1 class="text-9xl font-bold tracking-wide">FOLIO</h1>
       </div>
     </div>
-  </div>
-  <div class="bg-blue-500 text-white p-4">
-    Tailwind CSS is working!
+
+    <!-- Scroll Text -->
+    <footer class="absolute bottom-5 text-sm tracking-wider text-center">
+      <p>SCROLL TO VIEW</p>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomePage',
+  name: "HomePage",
 };
 </script>
 
-<style scoped>
-/* Additional styles for the Home component */
+<style>
+/* Optional additional styles for layout and design */
 </style>
+
