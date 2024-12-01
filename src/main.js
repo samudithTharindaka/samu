@@ -11,7 +11,15 @@ import './main.css';
 // Create Vue app
 const app = createApp(App);
 
-// Mount AOS initialization after the app is mounted
+// Use plugins
 app.use(MotionPlugin);
+
+// Mount app
 app.mount('#app');
-AOS.init();
+
+// Initialize AOS on mounted lifecycle
+AOS.init({
+  duration: 1000, // Adjust animation duration as needed
+  easing: 'ease-out', // Adjust easing for animations
+  once: true, // Whether animation should happen only once or every time you scroll
+});

@@ -2,19 +2,32 @@
   <div id="app">
     <!-- Home Component -->
     <HomePage />
+    <!-- About Component -->
+    <div class="bg-white">
+      
+      <AboutPage />
+    </div>
+   
     <!-- Particles Background -->
-    <div id="particles" class="absolute inset-0"></div> <!-- Ensure particles are placed behind the content -->
+    <div id="particles" class="absolute inset-0">
+     
+    </div> <!-- Ensure particles are placed behind the content -->
+  
+
+   
   </div>
 </template>
 
 <script>
 import HomePage from './components/Home.vue';
+import AboutPage from './components/About.vue';
 import { loadFull } from 'tsparticles';
 
 export default {
   name: 'App',
   components: {
     HomePage,
+    AboutPage,
   },
   data() {
     return {
@@ -24,7 +37,7 @@ export default {
         },
         particles: {
           number: {
-            value: 50, // Number of particles
+            value: 1000, // Number of particles
           },
           color: {
             value: "#ffffff", // Color of particles
